@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+{% if messages %}
+{% for message in messages %}
+{% if message.tags %}
+<script>alert("{{ message }}")</script> {% endif %}
+
+{% endfor %}
+
+{% endif %}
+<article class="media content-section">
+  <div class="media-body">
+    <div class="page-metadata">
+      <h2 class="article-content">dashboard</h2>
+    </div>
+  </div>
+</article>
+
+<article class="media content-section">
+
+  <div class="media-body">
+    <h4>What is an project?</h4>
+    <p class="article-content">
+    <div>
+      <p>here is an introduction to a project that implements email login and user
+        management:</p>
+      <p>Any modern website or web application requires a strong authentication system to
+        ensure user security and privacy. Email login can help achieve this by providing a reliable way for users to
+        register.</p>
+      <p>An email login and user management project typically includes the following steps:
+      </p>
+      <ol>
+        <li>Create a user model</li>
+        <li>Create a login view</li>
+        <li>Create a login page</li>
+        <li>Configure the login view</li>
+        <li>Run the project and test login</li>
+      </ol>
+      <p>An email login and user management project can be extended to add the following
+        features:</p>
+      <ul>
+        <li>Password reset</li>
+        <li>User account model</li>
+      </ul>
+   
+    </div>
+  </p>
+  </div>
+</article>
+{% endblock content %}
